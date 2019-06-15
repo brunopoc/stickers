@@ -8,6 +8,9 @@ html
     body 
         background: rebeccapurple
         color: #071723
+        p
+            margin: 0px
+            font-size: 15px
         .mb-s 
             margin-bottom: 16px
         .mb-m
@@ -52,26 +55,66 @@ html
                 resize: none
                 width: 100%
                 font-size: 14px
+                box-sizing: border-box
+            .checkbox
+                display: flex
+                align-items: center
+                input
+                    -webkit-appearance: none
+                    background-color: #2F3676
+                    padding: 12px
+                    border-radius: 3px
+                    margin-right: 10px
+                    display: inline-block
+                    position: relative 
+                    &:checked
+                        background: url(../../_images/check.svg) center right no-repeat
+                        color: #99a1a7
+                    &:hover
+                        background-color: #191847
+                    &:focus
+                        outline: none 
         .fieldset 
             padding: 0 32px
-        .counter 
+        .counter
+            display: flex
+            button
+                background: transparent
+                border: none !important
+                &:focus
+                    outline: none 
             svg 
                 fill: #2f3676
+                &:hover
+                    fill: #191847
+            .disabled
+                fill: #C5CFD6
+                &:hover
+                    fill: #C5CFD6
             input 
                 background: #dde3e9
                 border: 1px solid #2f3676
                 border-radius: 7px
+                text-align: center
                 font-size: 20px
                 font-weight: bold
                 margin: 0 8px
                 width: 60px
+        .sucess
+            color: #00C57C
+        .error
+            color: #F33232  
         .footer 
             padding: 32px
             background: #dde3e9
             display: flex
-            justify-content: flex-end
-            
-
+            justify-content: space-between
+            #msg-field
+                font-family: Inter
+                font-size: 18px
+                line-height: 21px
+                font-weight: 500
+                margin: auto 0px
             button 
                 appearance: none
                 background: #2f3676
@@ -83,11 +126,10 @@ html
                 text-transform: uppercase
                 font-weight: bold
                 padding: 8px 32px
+                height: 38px
                 &:focus
-                    border: 2px solid #2f3676
                     background: #191847 
                 &:hover
-                    border: 2px solid #2f3676
                     background: #191847
             
 
