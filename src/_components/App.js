@@ -1,10 +1,11 @@
 import React from 'react';
+import Dashboard from './_dashboard/'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        blank
+        <Dashboard />
       </header>
     </div>
   );
