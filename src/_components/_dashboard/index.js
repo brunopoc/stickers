@@ -28,7 +28,7 @@ class Dashboard extends Component {
 			</div>
 			<div className="fieldset mb-m">
 				<div className="label mb-s">Observações:</div>
-				<textarea name="descricao" placeholder="Alguma dúvida? Recado?"></textarea>
+				<textarea name="description" placeholder="Alguma dúvida? Recado?"></textarea>
 			</div>
 			<footer className="footer">
 				<button>Enviar</button>
